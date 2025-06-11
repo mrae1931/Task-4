@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productivity Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .chart-container {
+      margin: 30px 0;
+    }
+    .site-list {
+      margin-top: 20px;
+    }
+    .productive {
+      color: green;
+    }
+    .unproductive {
+      color: red;
+    }
+    .date-navigation {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Productivity Dashboard</h1>
+  
+  <div class="date-navigation">
+    <button id="prevWeek">Previous Week</button>
+    <h2 id="weekRange">Week of ...</h2>
+    <button id="nextWeek">Next Week</button>
+  </div>
+  
+  <div class="chart-container">
+    <canvas id="dailyChart"></canvas>
+  </div>
+  
+  <div class="chart-container">
+    <canvas id="categoryChart"></canvas>
+  </div>
+  
+  <div class="site-list">
+    <h3>Top Sites</h3>
+    <table id="sitesTable">
+      <thead>
+        <tr>
+          <th>Website</th>
+          <th>Total Time</th>
+          <th>Productive Time</th>
+          <th>Unproductive Time</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

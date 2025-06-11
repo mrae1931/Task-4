@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productivity Tracker Settings</title>
+  <style>
+    body {
+      width: 500px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .website-row {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    .website-input {
+      flex-grow: 1;
+      margin-right: 10px;
+    }
+    .classification-select {
+      width: 150px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Website Classification</h2>
+  <p>Define which websites are productive or unproductive:</p>
+  
+  <div id="classificationsContainer">
+    <!-- Dynamic content will be added here -->
+  </div>
+  
+  <button id="addWebsite">Add Website</button>
+  <button id="saveSettings">Save Settings</button>
+
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productivity Tracker</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .summary {
+      margin-bottom: 15px;
+    }
+    .productive {
+      color: green;
+    }
+    .unproductive {
+      color: red;
+    }
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h3>Today's Productivity</h3>
+  <div class="summary">
+    <p>Total time: <span id="totalTime">0h 0m</span></p>
+    <p>Productive: <span id="productiveTime" class="productive">0h 0m</span></p>
+    <p>Unproductive: <span id="unproductiveTime" class="unproductive">0h 0m</span></p>
+    <p>Productivity ratio: <span id="productivityRatio">0%</span></p>
+  </div>
+  <button id="viewDashboard">View Dashboard</button>
+  <button id="settings">Settings</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
